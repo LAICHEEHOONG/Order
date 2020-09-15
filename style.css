@@ -15,4 +15,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+iframe {
+    width: 100%;
+    height: 550px;
+}
 
