@@ -3,8 +3,8 @@ $(window).on('load', function(){
   removeLoader();
 });
 function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(150, function() {
+    $( ".c" ).fadeOut(500, function() {
       // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).remove(); //makes page more lightweight 
+      $( ".c" ).remove(); //makes page more lightweight 
   });  
 }
