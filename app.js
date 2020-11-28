@@ -39,7 +39,7 @@ function stop() {
     disable();
   })
 
-  
+
 }
 
 function screenSaver() {
@@ -69,7 +69,7 @@ function screenSaver() {
 
 
   }, 600000);
- 
+
 
   stop();
 }
@@ -77,3 +77,53 @@ function screenSaver() {
 screenSaver();
 
 
+const arr = [
+  {class: 'warranty', url: 'https://docs.google.com/spreadsheets/d/13m69xiLoxNK_IlfKeNDXe73hqTI0l56FybaJv2jdVcc/edit#gid=0'},
+  {class: 'kiosk', url: 'http://kiosk.phcocap.com/'},
+  {class: 'stockCheck', url: 'https://shrouded-headland-78556.herokuapp.com/'},
+  {class:'vsn', url: 'http://report.phcocap.com/Custom_Reporting_General_Check_SerialNum.aspx'},
+  {class: 'pelw', url: 'http://report.phcocap.com/Custom_Reporting_General_PELW_ADD.aspx'},
+  {class: 'search', url: 'http://stockbal.phcocap.com/'},
+  {class: 'wxr', url: 'http://i2wxr.phcocap.com/'},
+  {class: 'stkm', url: 'http://stkm.phcocap.com/addstockin.aspx'},
+  {class: 'tracePhone', url: 'http://report.phcocap.com/Custom_Reporting_General_Trace_by_Phone.aspx'},
+  {class: 'localServer', url: 'http://192.168.5.207:3000/'},
+  {class: 'phco', url: 'https://www.phco.my/'},
+ 
+  {class: 'celeron', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=CELERON%20LAPTOP&q=1'},
+  {class: 'pentium', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=PENTIUM%20LAPTOP&q=1'},
+  {class: 'i3', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=i3%20laptop&q=1'},
+  {class: 'i5', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=i5%20laptop&q=1'},
+  {class: 'i7', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=i7%20laptop&q=1'},
+  {class: 'e2', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=E2%20LAPTOP&q=1'},
+  {class: 'a4', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=A4%20LAPTOP&q=1'},
+  {class: 'a6', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=A6%20LAPTOP&q=1'},
+  {class: 'a9', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=A9%20LAPTOP&q=1'},
+  {class: 'athlon', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=ATHLON%20LAPTOP&q=1'},
+  {class: 'ryzen3', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=RYZEN%203%20LAPTOP&q=1'},
+  {class: 'ryzen5', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=RYZEN%205%20LAPTOP&q=1'},
+  {class: 'ryzen7', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=RYZEN%207%20LAPTOP&q=1'},
+  {class: 'ryzen9', url: 'http://stockbal.phcocap.com/default4.aspx?s=1&c=RYZEN%209%20LAPTOP&q=1'}
+]
+
+
+
+const screenChange = (obj) => {
+  document.querySelector(`.${obj.class}`).addEventListener('click', () => {
+    document.getElementById('openmenu').checked = false;
+    $('iframe').hide();
+    document.querySelector('iframe').setAttribute('src', `${obj.url}`);
+    $('iframe').fadeIn(1500);
+  })
+}
+
+arr.forEach((obj) => {
+  screenChange(obj);
+})
+
+// document.querySelector('.search').addEventListener('click', () => {
+//   document.getElementById('openmenu').checked = false;
+//   $('iframe').hide();
+//   document.querySelector('iframe').setAttribute('src', 'http://stockbal.phcocap.com/');
+//   $('iframe').fadeIn(1500);
+// })
