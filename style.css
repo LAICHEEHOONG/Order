@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Caslon+Text:400,700&display=swap');
 
 body {
-  font-family: Libre Caslon Text;
+  font-family: 'Quicksand', sans-serif;
   background-color: #FFAB91;
+  font-size: large;
 }
 
 .body-text {
@@ -102,12 +103,14 @@ div.menu-pane {
 
 .menu-links li:hover a {
   color: #FFAB91;
+  font-size: larger;
+  text-shadow: 2px 2px 5px #FFAB91;
 }
 
-.menu-links li:first-child:hover a {
+/* .menu-links li:first-child:hover a {
   color: black;  
   background-color: #FFAB91;
-}
+} */
 
 #QC-info {
   background-color: #FFAB91;
