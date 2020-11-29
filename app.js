@@ -1,6 +1,10 @@
 $(window).on('load', function () {
   // setTimeout(removeLoader, 100); //wait for page load PLUS two seconds.
   removeLoader();
+  setTimeout(() => {
+    document.getElementById('openmenu').checked = true;
+  }, 1000)
+  document.getElementById('openmenu').checked = true;
 });
 function removeLoader() {
   $(".c").fadeOut(500, function () {
@@ -120,4 +124,5 @@ const screenChange = (obj) => {
 arr.forEach((obj) => {
   screenChange(obj);
 })
+
 
