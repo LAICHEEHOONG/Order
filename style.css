@@ -103,10 +103,10 @@ div.menu-pane {
 
 .menu-links li:hover a {
   /* color: #FFAB91; */
-  color: white;
+  color: #44d62c;
   font-size: 1.4rem;
   font-weight: 900;
-  text-shadow:0px 10px 6px #fafafa;
+  text-shadow:0px 10px 6px #44d62c;
   /* text-shadow: 0px 10px 6px #FFAB91; */
   
 }
