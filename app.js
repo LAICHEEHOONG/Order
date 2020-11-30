@@ -19,8 +19,17 @@ document.getElementById('openmenu').addEventListener('mouseover', () => {
 })
 
 document.getElementById('openmenu').addEventListener('mouseout', () => {
-  $('.hamburger-icon').fadeTo('slow', 0.5);
+  $('.hamburger-icon').fadeTo(2000, 0.3);
 })
+
+
+
+if(document.getElementById('openmenu').checked) {
+  setInterval(() => {
+    $('.hamburger-icon').fadeTo('slow', 1);
+    $('.hamburger-icon').fadeTo(2000, 0.3);
+  }, 1000);
+}
 
 
 function stop() {
@@ -124,5 +133,15 @@ const screenChange = (obj) => {
 arr.forEach((obj) => {
   screenChange(obj);
 })
+
+$('iframe').mousemove(() => {
+  document.getElementById('openmenu').checked = false;
+  $('.hamburger-icon').fadeTo(700, 0);
+  $('.hamburger-icon').fadeTo(700, 1);
+  $('.hamburger-icon').fadeTo(700, 0);
+  $('.hamburger-icon').fadeTo(700, 1);
+  $('.hamburger-icon').fadeTo(700, 0.5);
+})
+
 
 
