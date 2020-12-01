@@ -143,5 +143,10 @@ $('iframe').mousemove(() => {
   $('.hamburger-icon').fadeTo(700, 0.5);
 })
 
-//git push -f origin master
+//git push -f origin master // force
+
+//git add .
+//git commit -m ".."
+//git branch // check branch
+//git push origin <branch name>
 
