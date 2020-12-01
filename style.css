@@ -462,3 +462,10 @@ svg polygon {
   opacity: 1;
   transition: 1s ease-in-out;
 }
+
+nav {
+  background-image: url("https://cdn.hipwallpaper.com/i/38/55/Ru4B96.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
