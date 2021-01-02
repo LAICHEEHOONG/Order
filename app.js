@@ -151,4 +151,8 @@ $('iframe').mousemove(() => {
 
 //git pull
 //git status
+//git branch
+//git branch ... // ... make another branch for testing not effect master
+//git checkout ...// ... = go to another branch
+
 
