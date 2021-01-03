@@ -143,6 +143,15 @@ $('iframe').mousemove(() => {
   $('.hamburger-icon').fadeTo(700, 0.5);
 })
 
+fetch('https://corona.lmao.ninja/v2/countries/malaysia?yesterday=true&strict=true&query')
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    document.getElementById('covid').innerHTML = `New Case: ${data.todayCases}`;
+  })
+  .catch(err => console.log(err))
+
+
 //git clone url
 //git add .
 //git commit -m ".."
@@ -156,3 +165,22 @@ $('iframe').mousemove(() => {
 //git checkout ...// ... = go to another branch
 
 
+// const url = 'https://corona.lmao.ninja/v2/countries/malaysia?yesterday=true&strict=true&query';
+
+
+// const data = fetch(url)
+//     .then(res => res.json())
+//     .then(json => {
+//         console.log(json);
+        
+//         console.log(`Total Case: ${json.cases}`);
+//         console.log(`Total Deaths: ${json.deaths}`);
+//         console.log(`Total Recovered: ${json.recovered}`);
+//         console.log(`Today Case: ${json.todayCases}`);
+//         console.log(`Today Deaths: ${json.todayDeaths}`)
+
+
+//     })
+//     .catch(err => console.log(err))
+
+// document.getElementById('root')?.innerHTML = data.country;

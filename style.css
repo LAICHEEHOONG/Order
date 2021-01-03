@@ -113,14 +113,7 @@ div.menu-pane {
   
 }
 
-/* svg:hover {
-  color: #44d62c;
-} */
 
-/* .menu-links li:first-child:hover a {
-  color: black;  
-  background-color: #FFAB91;
-} */
 
 #QC-info {
   background-color: #FFAB91;
@@ -474,4 +467,10 @@ nav {
 
 a {
   cursor: pointer;
+}
+
+.covid {
+  /* margin-top: 3%;
+  float: right; */
+  margin-top: -70px;
 }
