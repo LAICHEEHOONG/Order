@@ -147,7 +147,7 @@ fetch('https://corona.lmao.ninja/v2/countries/malaysia?yesterday=true&strict=tru
   .then(res => res.json())
   .then(data => {
     console.log(data);
-    document.getElementById('covid').innerHTML = `New Case: ${data.todayCases}`;
+    document.getElementById('covid').innerHTML = `<i class='fas fa-virus'></i> ${data.todayCases}`;
   })
   .catch(err => console.log(err))
 
